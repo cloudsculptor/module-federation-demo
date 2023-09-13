@@ -4,7 +4,7 @@ import federation from "@originjs/vite-plugin-federation";
 
 export default defineConfig({
   preview: {
-    port: 6000,
+    port: 6001,
     strictPort: true,
   },
   build: {
@@ -13,12 +13,13 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "@app",
+      name: "@instruments",
       filename: "remoteEntry.js",
       remotes: {
-        "@step-common-header": "http://localhost:6004/assets/remoteEntry.js"
+        "@step-common-header": "http://localhost:6005/assets/remoteEntry.js"
       },
       shared: [ "react", "react-dom" ]
     })
   ],
 })
+
