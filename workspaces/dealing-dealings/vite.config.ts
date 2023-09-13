@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
 import federation from "@originjs/vite-plugin-federation";
 
@@ -19,6 +19,7 @@ export default defineConfig({
       filename: "remoteEntry.js",
       exposes: {
         "./Dealings": "./src/modules/Dealings/Dealings",
+        "./DealingsWorkflowStep": "./src/modules/DealingsWorkflowStep/DealingsWorkflowStep",
       },
       shared: [ "react", "react-dom" ]
     })

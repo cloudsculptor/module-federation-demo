@@ -1,11 +1,13 @@
-import {Dealings} from "@dealing-dealings/Dealings";
 import "./Workflow.scss";
+import {DealingsWorkflowStep} from "@dealing-dealings/DealingsWorkflowStep";
 
-export const Workflow = () => {
+export const Workflow = (props: {
+    step: string;
+}) => {
     return (
         <div className={"Workflow"}>
-            Workflow
-            <Dealings/>
+            {props.step === "dealings" && <DealingsWorkflowStep/>}
+
         </div>
     )
 }

@@ -6,7 +6,7 @@ function App() {
         <>
             <StepHeader/>
             <p>dealing-app</p>
-            <Workflow/>
+            <Workflow step={"dealings"}/>
         </>
     )
 }
