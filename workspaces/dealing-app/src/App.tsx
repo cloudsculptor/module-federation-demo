@@ -1,12 +1,20 @@
 import {StepHeader} from "@step-common-header/StepHeader";
 import {Workflow} from "./modules/Workflow/Workflow.tsx";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
     return (
         <>
             <StepHeader/>
-            <p>dealing-app</p>
-            <Workflow step={"dealings"}/>
+            <BrowserRouter>
+                <Routes>
+                    <Route
+                        path="/dealings"
+                        element={<Workflow step={"dealings"}/>}
+                    />
+                    <Route path="/" element={<Navigate to={"/dealings"} />} />
+                </Routes>
+            </BrowserRouter>
         </>
     )
 }
