@@ -11,12 +11,22 @@
 ## Running locally
 
 ```
-cd step-common-header
+# Make `STEP common header` available via module federation
+cd module-federation-demo/step-common-header
 npm install
 npm run build
 npm run serve
-cd ..
-cd dealing-app
+# ( Outputs to: http://localhost:6005/assets/remoteEntry.js )
+
+# Make `Dealings component` available via module federation
+cd module-federation-demo/dealing-dealings
+npm install
+npm run build
+npm run serve
+# ( Outputs to: http://localhost:6002/assets/remoteEntry.js )
+
+# Run the app
+cd module-federation-demo/dealing-app
 npm install
 npm run dev
 firefox http://localhost:6001

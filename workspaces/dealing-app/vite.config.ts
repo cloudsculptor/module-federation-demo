@@ -9,6 +9,8 @@ export default defineConfig({
   },
   build: {
     target: "esnext",
+    minify: false,
+    cssCodeSplit: false,
   },
   plugins: [
     react(),
@@ -16,7 +18,8 @@ export default defineConfig({
       name: "@instruments",
       filename: "remoteEntry.js",
       remotes: {
-        "@step-common-header": "http://localhost:6005/assets/remoteEntry.js"
+        "@step-common-header": "http://localhost:6005/assets/remoteEntry.js",
+        "@dealing-dealings": "http://localhost:6002/assets/remoteEntry.js"
       },
       shared: [ "react", "react-dom" ]
     })
