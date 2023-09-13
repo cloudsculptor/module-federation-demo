@@ -9,11 +9,13 @@ export default defineConfig({
   },
   build: {
     target: "esnext",
+    minify: false,
+    cssCodeSplit: false,
   },
   plugins: [
     react(),
     federation({
-      name: "@step",
+      name: "@step-common-header",
       filename: "remoteEntry.js",
       exposes: {
         "./StepHeader": "./src/modules/StepHeader/StepHeader",

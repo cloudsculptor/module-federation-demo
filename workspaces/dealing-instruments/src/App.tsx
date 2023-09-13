@@ -1,10 +1,10 @@
-import {StepHeader} from "@step/StepHeader";
+import {StepHeader} from "@step-common-header/StepHeader";
 
 function App() {
   return (
     <>
-      <p>Instruments</p>
       <StepHeader/>
+        <p>adjskfjadskf</p>
     </>
   )
 }

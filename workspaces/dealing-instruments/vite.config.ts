@@ -16,7 +16,7 @@ export default defineConfig({
         name: "@instruments",
         filename: "remoteEntry.js",
         remotes: {
-          "@step": "http://localhost:6004/assets/remoteEntry.js"
+          "@step-common-header": "http://localhost:6004/assets/remoteEntry.js"
         },
         shared: [ "react", "react-dom" ]
       })
