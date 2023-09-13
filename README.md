@@ -12,10 +12,12 @@
 
 ```
 cd step-common-header
+npm install
 npm run build
 npm run serve
 cd ..
 cd dealing-app
+npm install
 npm run dev
 firefox http://localhost:6001
 ```
