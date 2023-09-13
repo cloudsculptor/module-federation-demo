@@ -14,7 +14,6 @@
     "./workspaces/dealing-common",
     "./workspaces/dealing-instruments-and-roles",
     "./workspaces/dealing-prepare",
-    "./workspaces/dealing-submit",
     "./workspaces/step-common-header"
   ]
 }
