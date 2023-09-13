@@ -1,4 +1,4 @@
-import "./StepHeader.css";
+import "./StepHeader.scss";
 
 export const StepHeader = () => {
     return (
