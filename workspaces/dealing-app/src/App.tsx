@@ -1,7 +1,7 @@
 import {StepHeader} from "@step-common-header/StepHeader";
 import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import {DealingsLoader} from "@dealing-dealings/DealingsLoader";
-import {DealingWorkflowStep} from "@dealing-dealings/DealingWorkflowStep";
+import {DealingLoader} from "@dealing-dealings/DealingLoader";
 
 function App() {
     return (
@@ -14,7 +14,7 @@ function App() {
                 />
                 <Route
                     path="/dealings/:dealingId"
-                    element={<DealingWorkflowStep dealingId={123}/>}
+                    element={<DealingLoader/>}
                 />
                 <Route path="/" element={<Navigate to={"/dealings"} />} />
             </Routes>
