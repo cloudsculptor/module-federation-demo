@@ -13,9 +13,7 @@
   "workspaces": [
     "./workspaces/dealing-app",
     "./workspaces/dealing-dealings",
-    "./workspaces/dealing-instruments",
     "./workspaces/dealing-prepare",
-    "./workspaces/dealing-common",
     "./workspaces/step-common-header"
   ]
 }
