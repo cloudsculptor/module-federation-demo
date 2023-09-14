@@ -21,7 +21,7 @@ export default defineConfig({
         "@step-common-header": "http://localhost:6005/assets/remoteEntry.js",
         "@dealing-dealings": "http://localhost:6002/assets/remoteEntry.js"
       },
-      shared: [ "react", "react-dom" ]
+      shared: [ "react", "react-dom", "react-router-dom" ]
     })
   ],
 })

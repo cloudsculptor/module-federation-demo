@@ -22,7 +22,7 @@ export default defineConfig({
         "./DealingWorkflowStep": "./src/modules/DealingWorkflowStep/DealingWorkflowStep",
         "./DealingsListWorkflowStep": "./src/modules/DealingsListWorkflowStep/DealingsListWorkflowStep",
       },
-      shared: [ "react", "react-dom" ]
+      shared: [ "react", "react-dom", "react-router-dom" ]
     })
   ],
 })
