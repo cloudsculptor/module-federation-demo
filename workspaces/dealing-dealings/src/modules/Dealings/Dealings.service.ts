@@ -1,4 +1,4 @@
-import {IDealing} from "./models/Dealing.ts";
+import {IDealing} from "./models/IDealing.ts";
 
 export const dealingsService = (): {
     fetchDealings: () => IDealing[];

@@ -1,6 +1,7 @@
 import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
 import federation from "@originjs/vite-plugin-federation";
+import {DealingsLoader} from "./src/modules/Dealings/DealingsLoader";
 
 export default defineConfig({
   preview: {
@@ -19,6 +20,7 @@ export default defineConfig({
       filename: "remoteEntry.js",
       exposes: {
         "./Dealings": "./src/modules/Dealings/Dealings",
+        "./DealingsLoader": "./src/modules/Dealings/DealingsLoader",
         "./DealingWorkflowStep": "./src/modules/DealingWorkflowStep/DealingWorkflowStep",
         "./DealingsListWorkflowStep": "./src/modules/DealingsListWorkflowStep/DealingsListWorkflowStep",
       },

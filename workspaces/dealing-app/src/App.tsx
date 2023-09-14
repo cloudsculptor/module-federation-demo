@@ -1,6 +1,6 @@
 import {StepHeader} from "@step-common-header/StepHeader";
 import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
-import {DealingsListWorkflowStep} from "@dealing-dealings/DealingsListWorkflowStep";
+import {DealingsLoader} from "@dealing-dealings/DealingsLoader";
 import {DealingWorkflowStep} from "@dealing-dealings/DealingWorkflowStep";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
             <Routes>
                 <Route
                     path="/dealings"
-                    element={<DealingsListWorkflowStep/>}
+                    element={<DealingsLoader/>}
                 />
                 <Route
                     path="/dealings/:dealingId"

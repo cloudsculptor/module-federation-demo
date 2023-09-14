@@ -1,6 +1,6 @@
-import {IDealing} from "./models/Dealing.ts";
 import "./Dealings.scss";
 import {Link} from "react-router-dom";
+import {IDealing} from "./models/IDealing.ts";
 
 export const Dealings = (props: {
     dealings: IDealing[];
