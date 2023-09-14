@@ -1,25 +1,20 @@
 import {IDealing} from "./models/IDealing.ts";
+import {DEALING_DATA} from "./Dealings.data.ts";
 
 export const dealingsService = (): {
+    fetchDealing: (dealingId: number) => IDealing;
     fetchDealings: () => IDealing[];
 } => {
     const fetchDealings = (): IDealing[] => {
-        // Just return a canned answer rather than make API call
-        return [
-            {
-                dealingId: 36247,
-                clientRef1: "Richie",
-                clientRef2: "Thomas"
-            },
-            {
-                dealingId: 76841,
-                clientRef1: "Thomas",
-                clientRef2: "Jefferson"
-            }
-        ]
+        return DEALING_DATA
+    }
+
+    const fetchDealing = (dealingId: number): IDealing => {
+        return DEALING_DATA.find((dealing: IDealing) => dealing.dealingId === dealingId)!;
     }
 
     return {
+        fetchDealing,
         fetchDealings
     }
 }
