@@ -21,8 +21,6 @@ export default defineConfig({
       exposes: {
         "./Dealings": "./src/modules/Dealings/Dealings",
         "./DealingsLoader": "./src/modules/Dealings/DealingsLoader",
-        "./DealingWorkflowStep": "./src/modules/DealingWorkflowStep/DealingWorkflowStep",
-        "./DealingsListWorkflowStep": "./src/modules/DealingsListWorkflowStep/DealingsListWorkflowStep",
       },
       shared: [ "react", "react-dom", "react-router-dom" ]
     })
