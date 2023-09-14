@@ -8,8 +8,6 @@ export const PrepareInstrument = (props: {
     return (
         <section className={"PrepareInstrument"}>
             PrepareInstrument
-            {props.dealing.dealingId}
-            {props.instrument.instrumentId}
         </section>
     )
 }
