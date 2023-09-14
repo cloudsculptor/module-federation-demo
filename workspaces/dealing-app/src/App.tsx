@@ -2,6 +2,7 @@ import {StepHeader} from "@step-common-header/StepHeader";
 import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import {DealingsLoader} from "@dealing-dealings/DealingsLoader";
 import {DealingLoader} from "@dealing-dealings/DealingLoader";
+import {PrepareInstrumentLoader} from "@dealing-prepare/PrepareInstrumentLoader";
 
 function App() {
     return (
@@ -15,6 +16,10 @@ function App() {
                 <Route
                     path="/dealings/:dealingId"
                     element={<DealingLoader/>}
+                />
+                <Route
+                    path="/dealings/:dealingId/instruments/:instrumentId"
+                    element={<PrepareInstrumentLoader/>}
                 />
                 <Route path="/" element={<Navigate to={"/dealings"} />} />
             </Routes>

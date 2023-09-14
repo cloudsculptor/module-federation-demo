@@ -19,7 +19,8 @@ export default defineConfig({
       filename: "remoteEntry.js",
       remotes: {
         "@step-common-header": "http://localhost:6005/assets/remoteEntry.js",
-        "@dealing-dealings": "http://localhost:6002/assets/remoteEntry.js"
+        "@dealing-dealings": "http://localhost:6002/assets/remoteEntry.js",
+        "@dealing-prepare": "http://localhost:6004/assets/remoteEntry.js"
       },
       shared: [ "react", "react-dom", "react-router-dom" ]
     })
