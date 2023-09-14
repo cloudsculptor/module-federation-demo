@@ -10,8 +10,7 @@ export const Dealings = (props: {
             <h1>Dealings</h1>
             {props.dealings.map((dealing: IDealing) => (
                 <Link className={"Dealings-dealing"} to={`/dealings/${dealing.dealingId}`}>
-                    <span>{dealing.clientRef1}</span>
-                    <span>{dealing.clientRef2}</span>
+                    <span>{dealing.description}</span>
                     <span>{dealing.dealingId}</span>
                 </Link>
             ))}

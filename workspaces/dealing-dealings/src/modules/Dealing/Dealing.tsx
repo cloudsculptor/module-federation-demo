@@ -11,8 +11,8 @@ export const Dealing = (props: {
                 <h1>Instruments</h1>
                 {props.dealing.instruments.map((instrument: IInstrument) => (
                     <Link className={"Dealing-instrument"} to={`/dealings/${props.dealing.dealingId}/instruments/${instrument.instrumentId}`}>
-                        <span>{instrument.instrumentId}</span>
                         <span>{instrument.instrumentType}</span>
+                        <span>{instrument.instrumentId}</span>
                     </Link>
                 ))}
         </section>
