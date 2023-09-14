@@ -19,7 +19,8 @@ export default defineConfig({
       filename: "remoteEntry.js",
       exposes: {
         "./Dealings": "./src/modules/Dealings/Dealings",
-        "./DealingsWorkflowStep": "./src/modules/DealingsWorkflowStep/DealingsWorkflowStep",
+        "./DealingWorkflowStep": "./src/modules/DealingWorkflowStep/DealingWorkflowStep",
+        "./DealingsListWorkflowStep": "./src/modules/DealingsListWorkflowStep/DealingsListWorkflowStep",
       },
       shared: [ "react", "react-dom" ]
     })

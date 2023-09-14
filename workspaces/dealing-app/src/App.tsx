@@ -1,6 +1,7 @@
 import {StepHeader} from "@step-common-header/StepHeader";
-import {Workflow} from "./modules/Workflow/Workflow.tsx";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import {DealingsListWorkflowStep} from "@dealing-dealings/DealingsListWorkflowStep";
+import {DealingWorkflowStep} from "@dealing-dealings/DealingWorkflowStep";
 
 function App() {
     return (
@@ -10,7 +11,11 @@ function App() {
                 <Routes>
                     <Route
                         path="/dealings"
-                        element={<Workflow step={"dealings"}/>}
+                        element={<DealingsListWorkflowStep/>}
+                    />
+                    <Route
+                        path="/dealings/:dealingId"
+                        element={<DealingWorkflowStep dealingId={123}/>}
                     />
                     <Route path="/" element={<Navigate to={"/dealings"} />} />
                 </Routes>
