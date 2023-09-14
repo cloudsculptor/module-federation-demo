@@ -12,9 +12,9 @@ export const dealingsService = (): {
                 clientRef2: "Thomas"
             },
             {
-                dealingId: 36247,
-                clientRef1: "Richie",
-                clientRef2: "Thomas"
+                dealingId: 76841,
+                clientRef1: "Thomas",
+                clientRef2: "Jefferson"
             }
         ]
     }
