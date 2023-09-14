@@ -20,7 +20,7 @@ export default defineConfig({
       exposes: {
         "./StepHeader": "./src/modules/StepHeader/StepHeader",
       },
-      shared: [ "react", "react-dom" ]
+      shared: [ "react", "react-dom", "react-router-dom" ]
     })
   ],
 })
