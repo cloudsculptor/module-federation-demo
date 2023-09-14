@@ -8,6 +8,9 @@ export const PrepareInstrument = (props: {
     return (
         <section className={"PrepareInstrument"}>
             PrepareInstrument
+            <code>
+                {JSON.stringify(props)}
+            </code>
         </section>
     )
 }
