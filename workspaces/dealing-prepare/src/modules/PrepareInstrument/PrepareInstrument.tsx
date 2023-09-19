@@ -1,5 +1,6 @@
 import {IDealing} from "dealing-dealings/src/modules/Dealings/models/IDealing.ts";
 import {IInstrument} from "./models/IInstrument.ts";
+import "./PrepareInstrument.scss";
 
 export const PrepareInstrument = (props: {
     dealing: IDealing;
@@ -7,10 +8,12 @@ export const PrepareInstrument = (props: {
 }) => {
     return (
         <section className={"PrepareInstrument"}>
-            PrepareInstrument
-            <code>
-                {JSON.stringify(props)}
-            </code>
+            <h1>Prepare Instrument</h1>
+            <pre>
+                <code>
+                    {JSON.stringify(props, null, 2)}
+                </code>
+            </pre>
         </section>
     )
 }
